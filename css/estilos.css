@@ -1,0 +1,84 @@
+img{
+    width: 40%;
+}
+
+body{
+    background-color: white;
+}
+
+button{
+
+    align-self:center;
+    justify-self: end;
+
+}
+
+
+main {
+    display: grid;
+    grid-template-areas: "mensaje carro" "productos productos";
+    background-color: whitesmoke;
+    margin: 50px;
+
+}
+
+.table {
+    grid-area: carro;
+    align-items: center;
+    justify-content:stretch
+}
+
+#cards {
+    grid-area: productos;
+    border: 10px;
+    border-color: beige;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: whitesmoke;
+    grid-gap: 10px;
+}
+
+
+
+main section{
+    grid-area: mensaje;
+    font-size: 50px;
+    align-self: center;
+    text-align: center;
+}
+
+.itemtienda {
+    display: flex;
+    border-style: outset;
+    background-color: white;
+}
+
+.cartel_precio {
+    font-size: 60px;
+    display: flex;
+}
+
+/*Nav*/
+nav {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 5%;
+}
+
+header {
+    grid-area: header;
+    display:flex;
+    align-items: center;
+    background-color: rgb(27, 27, 27);
+    color: beige;
+    font-size: 80px;
+
+}
+header section {
+    font-size: 20px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
