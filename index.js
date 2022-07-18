@@ -25,7 +25,6 @@ const fetchData = async () => {
     CrearCards(data)
 }
 
-
 // Productos
 const CrearCards = data => {
     data.forEach(item => {
@@ -56,6 +55,7 @@ const setCarrito = item => {
         id: item.querySelector('button').dataset.id,
         cantidad: 1
     }
+    
     if (carrito.hasOwnProperty(producto.id)) {
         producto.cantidad = carrito[producto.id].cantidad + 1
     }
